@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-shadow: 0;
+}
+
+body {
+    background-color: hsl(233, 47%, 7%);
+}
+
+.container{  
+    display: flex;
+    justify-content: center;
+    align-items: center;      
+    height: 100vh;
+}
+
+.box {
+    width: 65rem;
+    height: 25rem;
+    background-color: purple;
+    border-radius: .5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.box-central {
+    width: 65rem;
+    height: 21.875rem;
+    background-color: hsl(244, 38%, 16%);
+    padding-top: 3.125rem;
+    padding-left: 3.125rem;
+    padding-right: 5rem;
+    border-radius: 0.5rem 0 0 0.5rem  ;   
+}
+
+.texto-principal{
+    color: #fff;
+    padding-bottom: 1.25rem;
+    padding-left: 5px;
+    font-weight: 700;
+    font-size: 2rem;
+    font-family: 'Inter';
+}
+
+.texto-secundario {
+    font-size: 1rem;
+    padding-top: 10px;
+    padding-left: 5px;
+    color: gray;
+    font-weight: 400;
+    font-family: 'Lexend Deca';
+    line-height: 1.563rem;
+}
+
+.roxo{
+    color: hsl(277, 64%, 61%);
+}
+
+img{
+    height: 25rem;
+    opacity: 0.5;
+    border-radius: 0 0.5rem 0.5rem 0 ;
+}
+
+
+
+.quadro {
+    display: flex;
+    padding-left: 5px;
+    margin-top: 2.5rem;
+}
+
+.quantidade:nth-child(2),
+.quantidade:nth-child(3){
+    padding-left: 5rem;
+}
+
+.numero {
+    color: hsl(0, 0%, 100%);    
+    font-weight:700;
+    font-family: 'Inter';
+    font-size: 1.563rem;
+}
+
+.texto-numero {
+    text-transform: uppercase;
+    margin-top: 10px;
+    font-size: 11px;
+    color: hsla(0, 0%, 100%, 0.6);
+    font-weight: 400;
+    font-family: 'Lexend Deca';
+}
+
+@media screen and (max-width: 834px) {
+
+    .container{
+        height: auto;
+    }
+
+    .box {
+        flex-direction: column-reverse;
+        width: 80%;
+        height: auto;
+        margin: 6em 0;
+    }
+
+    .box-central{
+        width: auto;
+        height: auto;
+        border-radius: 0 0 0.5rem  0.5rem 
+    }
+
+    img {
+        width: 15px
+        height: auto;
+        border-radius: 0.5rem 0.5rem 0 0 ;
+    }
+
+    .quadro{
+        flex-direction: column;
+        margin-bottom: 4rem;
+        text-align: center;
+    }
+
+    .quantidade {
+        padding-bottom: 2rem;
+    }
+
+    .texto-principal {
+        font-size: 1.4rem;
+        text-align: center;
+    }
+
+    .texto-secundario{
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .quantidade:nth-child(2),
+.quantidade:nth-child(3){
+    padding-left: 0;
+}
+
+}
+
